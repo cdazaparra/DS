@@ -1,14 +1,15 @@
 // Esto sirve para cargar las diferentes páginas
-import { Outlet, useNavigation } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom"
 // Componentes
 // Componente Menú
-import Menu from "../components/Menu";
+import Menu from "../components/Menu"
 // Componente Footer
-import Footer from "../components/Footer";
+import Footer from "../components/Footer"
 // LIBRERIAS DE REACT
 import React from 'react'
 // Esta dunción devuelve un layout(pantalla) con los datos acorde al click del ususario
 const Layout = () => {
+    const navigation = useNavigation()
     return (
         <div>
             {/* Carga el menú */}
