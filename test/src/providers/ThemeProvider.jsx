@@ -10,6 +10,9 @@ const ThemeProvider = ({children}) => {
     const [theme, setTheme] = useState(false)
     // Creamos la variable color para saber que color va a quedar guardado
     // If ternario, condición, ?, valor verdadero, :, valor de falso
+    const handleThem=()=>{
+        setTheme(!theme)
+    }
     const color = theme ? 'Dark': 'Light'
     // Devolvemos el resultado de color
   return (
@@ -18,8 +21,7 @@ const ThemeProvider = ({children}) => {
         // Se envian los valores theme y color.
         // Se envia la función de cambio de color
         value={{
-            theme,
-            setTheme,
+            handleThem,
             color
         }}
     >
