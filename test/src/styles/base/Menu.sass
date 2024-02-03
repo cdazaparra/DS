@@ -1,0 +1,27 @@
+.Menu
+    display: grid
+    grid-template-columns: 1fr 3fr
+    background-color: #804000
+    padding: 3px
+    position: fixed
+    top: 0px
+    left: 0px
+    height: 100px
+    width: 100%
+    .menuLogo, .menuList
+        margin: 3px
+        display: grid
+        padding: 3px
+        justify-items: center
+        align-items: center
+        .menulistItem
+            padding: 3px
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr            
+            .menulistitemLink
+                display: grid
+                padding: 3px
+                color:  #80400080
+                width: 100%
+                &:hover
+                    color: black

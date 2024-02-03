@@ -1,5 +1,7 @@
 // Esto sirve para cargar las diferentes páginas
 import { Outlet, useNavigation } from "react-router-dom"
+// Estilos
+import '../styles/base.sass'
 // Componentes
 // Componente Menú
 import Menu from "../components/Menu"
