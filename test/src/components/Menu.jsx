@@ -1,6 +1,11 @@
 import React from 'react'
 
+// Importamos el contexto
+import {useThemeProvider} from '../context/ThemeContext'
+
 const Menu = () => {
+  const {color}= useThemeProvider()
+  const {handleThem}= useThemeProvider()
   return (
     <div className='Menu'>
       <div className='menuLogo'></div>
@@ -13,6 +18,9 @@ const Menu = () => {
         </li>
         <li  className='menulistItem'>
           <a  className='menulistitemLink' href="/ver-api">Ver API</a>
+        </li>
+        <li>
+          <button type='button' onClick={handleThem}>Cambio de color</button>
         </li>
       </ul>
     </div>

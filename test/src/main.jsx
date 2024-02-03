@@ -7,9 +7,16 @@ import { RouterProvider } from "react-router-dom";
 
 // creación del router
 import router from "./routes/router";
+// Importamos el proveedor del tema
+import ThemeProvider from "./providers/ThemeProvider";
+
+// importar hojas de estilo 95%
+import './styles/base.sass'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <ThemeProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </ThemeProvider>
   </React.StrictMode>,
 )
