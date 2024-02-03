@@ -2,13 +2,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      <div className='Firma'>Desiing by DC</div>
-      <div className='SocialNetWorks'>
-        <ul>
-          <li>Facebook</li>
-          <li>Twiter</li>
-          <li>Instagram</li>
+    <div className='Footer'>
+      <div className='footerFirma'>Desiing by DC</div>
+      <div className='footerSocialNetWorks'>
+        <ul className='footersocialnetWorksList'>
+          <li className='footersocialnetworkslistItem'>Facebook</li>
+          <li className='footersocialnetworkslistItem'>Twiter</li>
+          <li className='footersocialnetworkslistItem'>Instagram</li>
         </ul>
       </div>
     </div>

@@ -7,7 +7,7 @@ const Menu = () => {
   const {color}= useThemeProvider()
   const {handleThem}= useThemeProvider()
   return (
-    <div className='Menu'>
+    <div className={`Menu ${color} `}>
       <div className='menuLogo'></div>
       <ul className='menuList'>
         <li className='menulistItem'>
@@ -19,8 +19,8 @@ const Menu = () => {
         <li  className='menulistItem'>
           <a  className='menulistitemLink' href="/ver-api">Ver API</a>
         </li>
-        <li>
-          <button type='button' onClick={handleThem}>Cambio de color</button>
+        <li  className='menulistItem'>
+        <a  className='menulistitemLink' onClick={handleThem} href='#'>Cambio de color</a>
         </li>
       </ul>
     </div>
