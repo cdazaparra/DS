@@ -1,19 +1,19 @@
 import React from 'react'
 // Importar archivo
-import {data} from '../helpers/data.js'
+import {slidersData} from '../helpers/data.js'
 // Importando imágenes
 import logo from '../assets/images/descarga.png';
 const HomeSliders = () => {
   return (
-    <div>
-        {data.map((item=>{
+    <div className="Container">
+        {slidersData.map((data=>{
             return(
-                <div className="slider">
-                    <img src={item.image} alt="slider" />
-                    <div className="slider-content">
-                        <h2>{item.title}</h2>
-                        <p>{item.description}</p>
-                        <a href={item.link} target="_blank" rel="noopener noreferrer">{item.button}</a>
+                <div className="Slider" key={data.id}>
+                        <h2  className="sliderTitle">{data.title}</h2>
+                    <div className="sliderContent">
+                        <img className='slidercontentImg' src={data.img} alt="slidercontentImg" />
+                        <p className="slidercontenttitleText">{data.description}</p>
+                        <a href={data.link} target="_blank" rel="noopener noreferrer">{data.button}</a>
                     </div>
                 </div>
             )

@@ -4,7 +4,6 @@ const Home = () => {
   return (
     <div className="Home">
       <HomeSliders></HomeSliders>
-      <HomeSliders></HomeSliders>
     </div>
   )
 }
